@@ -27,7 +27,7 @@ if github_repo:
     if st.button("GeneratePoster"):
         if(repo_name):
             poster = PosterHelper(repo_name)
-            st.success("已经保存")
+            st.success("Poster has save to the root dir of the project")
         
 
        
