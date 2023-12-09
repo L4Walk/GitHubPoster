@@ -2,8 +2,7 @@ from Utils.GitHubHelper import g_Helper
 from PIL import Image,ImageDraw,ImageFont
 import qrcode
 from qrcode.image.styledpil import StyledPilImage
-from qrcode.image.styles.moduledrawers import RoundedModuleDrawer,SquareModuleDrawer
-from qrcode.image.styles.colormasks import RadialGradiantColorMask,SquareGradiantColorMask
+from qrcode.image.styles.moduledrawers import RoundedModuleDrawer
 
 import os
 

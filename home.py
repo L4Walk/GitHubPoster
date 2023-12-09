@@ -1,5 +1,4 @@
 import streamlit as st
-from Utils.GitHubHelper import g_Helper
 from Utils.PosterHelper import PosterHelper
 
 
