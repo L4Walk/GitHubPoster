@@ -23,10 +23,10 @@ github_repo = st.text_input("Please type GitHub Repo's Url here",f"{github_url}L
 if github_repo:
     #检查是否为有效URL
     repo_name = github_repo[len(github_url):]
-    if st.button("GeneratePoster"):
+    if st.button("Generate Poster"):
         if(repo_name):
             poster = PosterHelper(repo_name)
-            st.success("Poster has save to the root dir of the project")
+            st.success("Poster has save to `{rootpath}\outs\`")
         
 
        

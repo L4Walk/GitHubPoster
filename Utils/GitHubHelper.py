@@ -1,16 +1,12 @@
 from dotenv import load_dotenv
 from github import Github
 from github import Auth
-from streamlit import st
 import os
 
 class GitHubHelper:
     def __init__(self):
         # 获取GitHubToken
         env_file = os.path.join(os.getcwd(), '.env')
-
-        if not os.path.exists(env_file):
-            st.error("You need create `.env` file")
 
         # 加载 .env 文件中的环境变量
         load_dotenv()

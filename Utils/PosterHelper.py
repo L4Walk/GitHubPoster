@@ -57,8 +57,17 @@ class PosterHelper:
         size = 125
         template.paste(qr_img_resized, (833,366,833 + width, 366 + height))
 
+
+        # 默认路径：项目根目录/outs
+        save_path = os.path.join(os.getcwd(),'outs')
+
+        # 检查路径是否存在
+        if not os.path.exists(save_path):
+            # 如果不存在，则创建该路径
+            os.makedirs(save_path)
+
          # 保存
-        template.save("poster.png")
+        template.save(f"./outs/{self.name}.png")
 
 
     def create_qrcode(self):
